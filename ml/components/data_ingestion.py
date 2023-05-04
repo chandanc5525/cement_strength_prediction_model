@@ -90,12 +90,12 @@ class DataIngestion:
             return data_ingestion_artifact
 
         except Exception as e:
-            raise CustomException(e, sys)(e)
+            raise CustomException(e, sys)from e
 
     def initate_data_ingestion(self):
         try:
             raw_data_file = self.download_data()
             return self.split_data_as_train_test()
         except Exception as e:
-            raise CustomException(e, sys)(e)
+            raise CustomException(e, sys)from e
 
