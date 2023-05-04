@@ -1,4 +1,9 @@
-pandas
-numpy
+pandas~=2.0.1
+numpy~=1.24.3
 flask
 -e .
+PyYAML~=6.0
+dill~=0.3.6
+setuptools~=65.5.0
+scikit-learn~=1.2.2
+six~=1.16.0
